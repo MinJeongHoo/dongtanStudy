@@ -21,9 +21,9 @@ JavaScript (ES6) code snippets
  - ex-mac) cd js -> node test 
 
 - 시켱(인식)
- - 1 let,const와 블록 레벨 스코프
- - 2 템플릿 리터럴
- - 3 화살표 함수
+ - 1. let,const와 블록 레벨 스코프
+ - 2. 템플릿 리터럴
+ - 3. 화살표 함수
 
 - 개발자(지은?이름이 정확히 기억이 안나서 ㅠㅠ 틀리면 바꿔 주세요)
  - 4. 매개변수 기본값 ,Rest 파라미터 , Spread 문법, Rest spread 파라미터
