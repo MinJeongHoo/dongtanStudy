@@ -77,3 +77,27 @@ child.sayHi();  // Hi! child
 
 
 /*가족에 정보에 대한 프로퍼티를 만드시오. 단 부모로 부터 상속 받을것*/
+// var people = [
+//   {
+//     name: "Mike Smith",
+//     family: {
+//       mother: "Jane Smith",
+//       father: "Harry Smith",
+//       sister: "Samantha Smith"
+//     },
+//     age: 35
+//   },
+//   {
+//     name: "Tom Jones",
+//     family: {
+//       mother: "Norah Jones",
+//       father: "Richard Jones",
+//       brother: "Howard Jones"
+//     },
+//     age: 25
+//   }
+// ];
+
+// for ( of ) {
+//   console.log("Name: " + n + ", Father: " + f);
+// }
