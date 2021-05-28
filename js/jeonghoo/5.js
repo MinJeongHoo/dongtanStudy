@@ -74,3 +74,6 @@ const child = {
 
 parent.sayHi(); // Hi! parent
 child.sayHi();  // Hi! child
+
+
+/*가족에 정보에 대한 프로퍼티를 만드시오. 단 부모로 부터 상속 받을것*/
