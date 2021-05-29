@@ -93,3 +93,43 @@ const person = {
 
 const { address: { city } } = person;
 console.log(city); // 'Seoul'
+
+
+
+/*가족에 정보에 대한 프로퍼티를 만드시오. 단 부모로 부터 상속 받을것*/
+// var people = [
+//   {
+//     name: "Mike Smith",
+//     family: {
+//       mother: "Jane Smith",
+//       father: "Harry Smith",
+//       sister: "Samantha Smith"
+//     },
+//     age: 35
+//   },
+//   {
+//     name: "Tom Jones",
+//     family: {
+//       mother: "Norah Jones",
+//       father: "Richard Jones",
+//       brother: "Howard Jones"
+//     },
+//     age: 25
+//   }
+// ];
+
+// for ( of ) {
+//   console.log("Name: " + n + ", Father: " + f);
+// }
+
+
+
+/**
+ *  1 ~ 100 까지 수중 랜덤으로 하나가 선택되고 그 수를 맞추는 게임
+ * 총 10번의 기회가 주어짐
+ * 숫자를 입력 후 버튼을 클릭하면 alert 호출 입력 한 숫자보다 큽니다. 작습니다. 정답입니다.
+ * 만약 10번의 기회가 끝나면 alert 종료 되었습니다.=> Reset
+ *
+ * Math.floor(Math.random()*(max-min+1)) + min; 랜덤 숫자 생성시 이걸로
+*/
+
