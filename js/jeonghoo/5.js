@@ -5,58 +5,60 @@
 /* 1.프로퍼티 축약 표현 */
 let x = 1, y = 2;
 const obj = { x, y };
-console.log(obj); //{x:1,y:2}
+console.log(); //{x:1,y:2}
+
+
 
 /* 2.프로퍼티 키 동적 생성 */
 
-// const prefix = 'prop';
-// let i = 0;
+const prefix = 'prop';
+let i = 0;
 
-// const obj = {
-//   [`${prefix}-${++i}`]: i,
-//   [`${prefix}-${++i}`]: i,
-//   [`${prefix}-${++i}`]: i
-// }
+const obj = {
+  [`${prefix}-${++i}`]: i,
+  [`${prefix}-${++i}`]: i,
 
-// console.log(obj)
+  [`${prefix}-${++i}`]: i
+}
+
 
 
 /* 3.메소드 축약 표현 */
 
-// var obj = {
-//   name: 'Lee',
-//   sayHi: function () {
-//     console.log('Hi! ' + this.name);
-//   }
-// };
+var obj = {
+  name: 'Lee',
+  sayHi: function () {
+    console.log('Hi! ' + this.name);
+  }
+};
 
 // obj.sayHi();
 
 
-// const obj = {
-//   name: 'Lee',
-//   sayHi() {
-//     console.log('Hi!' + this.name);
-//   }
-// }
+const obj = {
+  name: 'Lee',
+  sayHi() {
+    console.log('Hi!' + this.name);
+  }
+}
 
 // obj.sayHi();
 
 
 /*4._proto_프로퍼티에 의한 상속*/
 
-// var parent = {
-//   name: 'parent',
-//   sayHi: function () {
-//     console.log('Hi! ' + this.name);
-//   }
-// };
+var parent = {
+  name: 'parent',
+  sayHi: function () {
+    console.log('Hi! ' + this.name);
+  }
+};
 
-// var child = Object.create(parent);
-// child.name = 'child';
+var child = Object.create(parent);
+child.name = 'child';
 
-// parent.sayHi();
-// child.sayHi();
+parent.sayHi();
+child.sayHi();
 
 
 const parent = {
@@ -75,3 +77,10 @@ const child = {
 parent.sayHi(); // Hi! parent
 child.sayHi();  // Hi! child
 
+
+
+const obj1 = { name: 'min', age: 33 }
+const obj2 = obj1;
+obj2.name = 'km';
+console.log(obj1.name);
+console.log(obj2.name)
