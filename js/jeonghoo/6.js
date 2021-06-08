@@ -1,6 +1,6 @@
 /**
  * 디스트럭처링은 구조화된 배열 또는 객체를 파괴하여 개별적인 변수에 할당하는 것
-*/
+ */
 
 /*1. 배열 디스트럭처링*/
 // const arr = [1, 2, 3];
@@ -10,11 +10,6 @@
 // // 디스트럭처링을 사용할 때는 반드시 initializer(초기화자)를 할당해야 한다.
 // // const [one, two, three]; // SyntaxError: Missing initializer in destructuring declaration
 // console.log(one, two, tree);
-
-// let x, y, z;
-
-// [x, y] = [1, 2];
-// console.log(x, y); // 1 2
 
 // [x, y] = [1];
 // console.log(x, y); // 1 undefined
@@ -42,7 +37,6 @@
 // const [year, month, day] = formattedDate.split('-');
 // console.log([year, month, day]); // [ '2019', '05', '21' ]
 
-
 // // ES6 Destructuring
 // const obj = { firstName: 'Ungmo', lastName: 'Lee' };
 
@@ -51,8 +45,6 @@
 // const { lastName, firstName } = obj;
 
 // console.log(firstName, lastName); // Ungmo Lee
-
-
 
 // // 프로퍼티 키가 prop1인 프로퍼티의 값을 변수 p1에 할당
 // // 프로퍼티 키가 prop2인 프로퍼티의 값을 변수 p2에 할당
@@ -93,8 +85,6 @@
 // const { address: { city } } = person;
 // console.log(city); // 'Seoul'
 
-
-
 /*가족에 정보에 대한 프로퍼티를 만드시오. 단 부모로 부터 상속 받을것*/
 // var people = [
 //   {
@@ -121,8 +111,6 @@
 //   console.log("Name: " + n + ", Father: " + f);
 // }
 
-
-
 /**
  *  1 ~ 100 까지 수중 랜덤으로 하나가 선택되고 그 수를 맞추는 게임
  * 총 10번의 기회가 주어짐
@@ -130,5 +118,5 @@
  * 만약 10번의 기회가 끝나면 alert 종료 되었습니다.=> Reset
  *
  * Math.floor(Math.random()*(max-min+1)) + min; 랜덤 숫자 생성시 이걸로
-*/
+ */
 
