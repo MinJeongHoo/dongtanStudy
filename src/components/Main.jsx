@@ -11,7 +11,7 @@ const Main = () => {
   const [taskList, setTaskList] = useState([]);
   
   const saveTask = useCallback((value) => {
-    setTaskList([{id:uuid(), task: value, complete: false },ㄴ...taskList])
+    setTaskList([...taskList,{id:uuid(), task: value, complete: false }])
   }, [taskList]);
   
   /**
@@ -34,7 +34,7 @@ const Main = () => {
 
   const deleteTask = useCallback((id) => {
     const newTaskList = taskList.filter((data) => {
-      if (data.id !== id) ({ ...data });
+      return data.id !== id;
     });
     setTaskList(newTaskList);
   },[taskList]);

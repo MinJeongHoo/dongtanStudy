@@ -5,7 +5,7 @@ const Active = ({ taskList,changeTask }) => {
   const style = {
     'textDecoration':'line-through'
   }
- const onChange = (event) => {
+  const onChange = (event) => {
     const id = event.target.parentNode.id;
     const checked = event.target.checked;
     changeTask(checked,id);
@@ -14,8 +14,8 @@ const Active = ({ taskList,changeTask }) => {
     <ul>
       {taskList.map(({id,task,complete }) =>
         !complete&&
-        <li key={id} id={id}>
-          <input type="checkbox" ref={checkBox} onChange={onChange}/>
+        <li key={id} id={id} >
+          <input type="checkbox" ref={checkBox} onChange={onChange} value={ complete}/>
           <span style={complete?style:{}}>{task}</span>
         </li>
       )}
