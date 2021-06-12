@@ -1,0 +1,10 @@
+.itemName {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.itemDiv {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}

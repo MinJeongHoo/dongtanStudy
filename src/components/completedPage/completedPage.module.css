@@ -1,0 +1,12 @@
+.completedDiv {
+  width: 500px;
+}
+.div {
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-between;
+}
+
+.btn {
+  float: right;
+}

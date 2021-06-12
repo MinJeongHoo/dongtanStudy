@@ -5,4 +5,9 @@ const itemState = atom({
   default: [],
 });
 
-export { itemState };
+const btnState = atom({
+  key: "btn",
+  default: "all",
+});
+
+export { itemState, btnState };

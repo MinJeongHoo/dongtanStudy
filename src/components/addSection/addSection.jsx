@@ -5,12 +5,20 @@ import styles from "./addSection.module.css";
 import { useSetRecoilState } from "recoil";
 import { itemState } from "../../atom";
 
+let id = 0;
+const getId = () => id++;
+
 const AddSection = () => {
   const [tempName, setTempName] = useState("");
   const setItems = useSetRecoilState(itemState);
 
   const onInsert = (e) => {
-    setItems((items) => items.concat({ name: tempName, done: false }));
+    if (tempName) {
+      setItems((items) =>
+        items.concat({ id: getId(), name: tempName, done: false })
+      );
+    }
+
     setTempName("");
   };
 
