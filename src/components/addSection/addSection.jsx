@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Button, Form, FormGroup, Input } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./addSection.module.css";
-import { useRecoilState } from "recoil";
-import { item } from "../../atom";
+import { useSetRecoilState } from "recoil";
+import { itemState } from "../../atom";
 
 const AddSection = () => {
   const [tempName, setTempName] = useState("");
-  const [items, setItems] = useRecoilState(item);
+  const setItems = useSetRecoilState(itemState);
 
-  useEffect(() => {
-    console.log(items);
+  const onInsert = (e) => {
+    setItems((items) => items.concat({ name: tempName, done: false }));
     setTempName("");
-  }, [items]);
+  };
 
   return (
     <Form className={styles.div}>
@@ -26,10 +26,7 @@ const AddSection = () => {
           value={tempName}
         />
       </FormGroup>
-      <Button
-        onClick={(e) => setItems({ name: tempName })}
-        className={styles.btn}
-      >
+      <Button onClick={onInsert} className={styles.btn}>
         Add
       </Button>
     </Form>
